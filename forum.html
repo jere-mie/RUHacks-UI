@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- https://getbootstrap.com/docs/4.4/components/alerts/ -->
+
+<html>
+  <head>
+    <title>Block The Pill</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta property="og:site_name" content="Block the Pill" />
+    <meta property="og:title" content="Block the Pill" />
+    <meta property="og:description" content="A safe place for the most vulnerable in the world" />
+    <meta property="og:image" content="/logoSquare.png" />
+    <meta property="og:type" content="website" />
+
+    <!-- favicon stuff -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body style="background-color: black; color:white">
+    <!-- this is the div that gets replaced by the navbar -->
+    <div id="placeholder"></div>
+    
+    <br><br><br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="thin">Welcome to Our Community Forum!</h1>
+                <p class="thin">Here you'll find posts from our community members detailing their journey.</p>
+                <hr width="80%">
+                <br>
+                <!-- if logged in -->
+                <a href="newpost.html" class="btn btn-outline-light">Create a New Post</a>
+                <!-- endif -->
+                <br><br><br>
+                <!-- Here is where the posts will go -->
+                <!-- Example Post -->
+                <div class="pushed lighter">
+                    <h6 class="thin">{{ Name }}<small> posted on {{ date }}</small></h6>
+                    <hr>
+                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+                </div>
+                <!-- End Example Post -->
+                <!-- Example Post -->
+                <div class="pushed lighter">
+                    <h6 class="thin">{{ Name }}<small> posted on {{ date }}</small></h6>
+                    <hr>
+                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+                </div>
+                <!-- End Example Post -->
+            </div>
+        </div>
+    </div>
+
+
+    <!--Scripts: DO NOT TOUCH!-->
+    <script>
+        $(function(){
+          $("#placeholder").load("nav.html");
+        });
+    </script>
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>  
+  </body>
+</html>

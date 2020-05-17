@@ -8,11 +8,12 @@ h2{font-weight: 200;}
 h3{font-weight: 200;}
 .center{text-align: center;}
 .pushed{
-    margin: 20;
+    margin: 20px;
+    padding:20px;
 }
 .lighter{
     color: white;
-    background-color: rgb(11, 11, 11);
+    background-color: rgb(19, 19, 19);
 }
 .thin{
     font-weight: 300;
